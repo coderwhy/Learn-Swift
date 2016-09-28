@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NewsViewCell" customModule="News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8yU-5p-zYc">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Ore-Cp-CYA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小码哥IT教育小码哥IT教育小码哥IT教育小码哥IT教育小码哥IT教育" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRR-Zw-2Vq">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网易新闻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzx-ad-H5A">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="666跟帖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfR-YP-UWt">
+                        <color key="backgroundColor" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xzx-ad-H5A" firstAttribute="leading" secondItem="fRR-Zw-2Vq" secondAttribute="leading" id="2W3-2L-P3a"/>
+                    <constraint firstItem="fRR-Zw-2Vq" firstAttribute="leading" secondItem="8yU-5p-zYc" secondAttribute="trailing" constant="10" id="7It-4d-MhF"/>
+                    <constraint firstAttribute="trailing" secondItem="fRR-Zw-2Vq" secondAttribute="trailing" constant="15" id="84Y-Az-q6G"/>
+                    <constraint firstItem="fRR-Zw-2Vq" firstAttribute="top" secondItem="8yU-5p-zYc" secondAttribute="top" id="FWL-hX-GtR"/>
+                    <constraint firstItem="KfR-YP-UWt" firstAttribute="trailing" secondItem="fRR-Zw-2Vq" secondAttribute="trailing" id="Gdu-GD-dzZ"/>
+                    <constraint firstItem="Xzx-ad-H5A" firstAttribute="bottom" secondItem="8yU-5p-zYc" secondAttribute="bottom" constant="-5" id="W3x-Y8-bR7"/>
+                    <constraint firstAttribute="bottom" secondItem="8yU-5p-zYc" secondAttribute="bottom" constant="8" id="Wr4-xJ-9gE"/>
+                    <constraint firstItem="8yU-5p-zYc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="k21-uw-u5O"/>
+                    <constraint firstItem="8yU-5p-zYc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="nhG-RD-Gqo"/>
+                    <constraint firstItem="KfR-YP-UWt" firstAttribute="bottom" secondItem="Xzx-ad-H5A" secondAttribute="bottom" id="poZ-Vu-s1q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="8yU-5p-zYc" id="1LR-MC-8Gu"/>
+                <outlet property="replyCountLabel" destination="KfR-YP-UWt" id="c5N-8V-bMF"/>
+                <outlet property="sourceLabel" destination="Xzx-ad-H5A" id="O1g-cE-xr2"/>
+                <outlet property="titleLabel" destination="fRR-Zw-2Vq" id="xnm-NP-y87"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="-13"/>
+        </tableViewCell>
+    </objects>
+</document>
